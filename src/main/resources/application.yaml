@@ -1,0 +1,40 @@
+spring:
+  profiles:
+    active: dev
+  aop:
+    auto: true
+  datasource:
+    #类型
+    type: com.alibaba.druid.pool.DruidDataSource
+    platform: mysql
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #数据库连接
+    url: jdbc:mysql://192.168.33.10:3306/db_blog?rewriteBatchedStatements=true&autoReconnect=true
+    #数据库用户名密码
+    username: root
+    password: 123qwe4r
+    #连接池配置
+    druid:
+      #初始化连接池大小
+      initialSize: 10
+      #最大空闲值.当经过一个高峰时间后，连接池可以慢慢将已经用不到的连接慢慢释放一部分，一直减少到maxIdle为止
+      minIdle: 10
+      #最大活跃数
+      maxActive: 100
+      #最大建立连接等待时间。如果超过此时间将接到异常。设为－1表示无限制
+      maxWait: 30000
+    # es 配置  多个uri使用,号分割
+    elasticsearch:
+      rest:
+        uris: http://192.168.33.10:9200
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    auto-mapping-behavior: full
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:mappings/*.xml
+  type-aliases-package: com.harris.harris.dao.po
+  global-config:
+    db-config:
+      id-type: auto
