@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-12-20T12:49:29.013Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36" etag="E0C3aC68izXfavm6xUB1" version="15.9.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-21T10:28:17.586Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36" etag="JYQQjgXSdKcC_zw0QJO5" version="15.9.6" type="github">
   <diagram id="OU4eNydrIUp-uReHMDS9" name="第 1 页">
-    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="754" dy="402" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -33,6 +33,75 @@
         </mxCell>
         <mxCell id="L3zEdKHz1LLwuw3hhf_Q-12" value="&lt;h1&gt;Spring核心方法&lt;/h1&gt;&lt;p&gt;org.springframework.context.support.AbstractApplicationContext#refresh&lt;/p&gt;&lt;p&gt;org.springframework.beans.factory.BeanFactory&amp;nbsp; 描述bean生命周期的注释&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=#d79b00;fillColor=#ffe6cc;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="40" y="420" width="500" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="L3zEdKHz1LLwuw3hhf_Q-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1" source="L3zEdKHz1LLwuw3hhf_Q-13" target="L3zEdKHz1LLwuw3hhf_Q-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L3zEdKHz1LLwuw3hhf_Q-13" value="&lt;div style=&quot;text-align: left ; line-height: 1.75 ; font-size: 14px&quot;&gt;refresh.&lt;span&gt;finishBeanFactoryInitialization&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="30" y="690" width="310" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L3zEdKHz1LLwuw3hhf_Q-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1" source="L3zEdKHz1LLwuw3hhf_Q-14" target="L3zEdKHz1LLwuw3hhf_Q-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L3zEdKHz1LLwuw3hhf_Q-14" value="getBean" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="420" y="690" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L3zEdKHz1LLwuw3hhf_Q-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1" source="L3zEdKHz1LLwuw3hhf_Q-16" target="L3zEdKHz1LLwuw3hhf_Q-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L3zEdKHz1LLwuw3hhf_Q-16" value="doGetBean" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="620" y="690" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L3zEdKHz1LLwuw3hhf_Q-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1" source="L3zEdKHz1LLwuw3hhf_Q-18" target="L3zEdKHz1LLwuw3hhf_Q-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L3zEdKHz1LLwuw3hhf_Q-18" value="createBean" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="620" y="830" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L3zEdKHz1LLwuw3hhf_Q-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1" source="L3zEdKHz1LLwuw3hhf_Q-20" target="L3zEdKHz1LLwuw3hhf_Q-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L3zEdKHz1LLwuw3hhf_Q-20" value="doCreateBean" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="420" y="830" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L3zEdKHz1LLwuw3hhf_Q-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1" source="L3zEdKHz1LLwuw3hhf_Q-23" target="L3zEdKHz1LLwuw3hhf_Q-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L3zEdKHz1LLwuw3hhf_Q-23" value="createBeanInstance" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="220" y="830" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L3zEdKHz1LLwuw3hhf_Q-26" value="&lt;div style=&quot;text-align: left ; line-height: 1.75 ; font-size: 14px&quot;&gt;populateBean&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="30" y="830" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L3zEdKHz1LLwuw3hhf_Q-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#fff2cc;strokeColor=#d6b656;" edge="1" parent="1" source="L3zEdKHz1LLwuw3hhf_Q-28" target="L3zEdKHz1LLwuw3hhf_Q-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L3zEdKHz1LLwuw3hhf_Q-28" value="一级缓存" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="70" y="1000" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L3zEdKHz1LLwuw3hhf_Q-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#fff2cc;strokeColor=#d6b656;" edge="1" parent="1" source="L3zEdKHz1LLwuw3hhf_Q-29" target="L3zEdKHz1LLwuw3hhf_Q-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L3zEdKHz1LLwuw3hhf_Q-29" value="二级缓存" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="70" y="1130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L3zEdKHz1LLwuw3hhf_Q-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#fff2cc;strokeColor=#d6b656;" edge="1" parent="1" source="L3zEdKHz1LLwuw3hhf_Q-30" target="L3zEdKHz1LLwuw3hhf_Q-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L3zEdKHz1LLwuw3hhf_Q-30" value="三级缓存&lt;br&gt;&lt;div style=&quot;text-align: left ; line-height: 1.75 ; font-size: 14px&quot;&gt;singletonFactories&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="70" y="1260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L3zEdKHz1LLwuw3hhf_Q-31" value="存储key为beanName，val为labada表达式的map结构" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="300" y="1250" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="L3zEdKHz1LLwuw3hhf_Q-33" value="存储key为beanName，val为半成品对象地址" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="294" y="1120" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="L3zEdKHz1LLwuw3hhf_Q-35" value="存储key为beanName，val为成品对象地址" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="294" y="990" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="L3zEdKHz1LLwuw3hhf_Q-38" value="1. 能不用用一级缓存解决循环依赖问题？&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;不能，如果使用一级缓存意味着需要将半成品对象和成品对象存储在一起，获取对象时可能获取到半成品对象，所以需要区分存储成品和半成品对象&lt;br&gt;&lt;br&gt;2. 能不能用二级缓存解决循环依赖问题呢？&lt;br&gt;&amp;nbsp; &amp;nbsp; 能，但需要基于不使用Aop，不用创建代理对象的前提下。三级缓存是解决代理过程中循环依赖的问题&lt;br&gt;&lt;br&gt;3. 对象先进入三级缓存，如果此时实例化并填充属性完成，就直接进入3级缓存中，如果此时未完成属性赋值，则进入2级缓存。" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="1340" width="440" height="170" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
